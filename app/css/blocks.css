@@ -9,6 +9,90 @@
   .ui-block .ui-block-title:last-child {
     border-bottom: 0; }
 
+.pb-140 {
+  padding-bottom: 140px; }
+
+.tree-block {
+  margin-bottom: 50px;
+  position: relative; }
+  .tree-block.one-lines:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: calc(100% + 52px);
+    z-index: -1;
+    background: #d6d6d6; }
+  .tree-block.one-lines:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -26px;
+    transform: translate(0%, 0%);
+    width: calc(50% + 17px);
+    height: 2px;
+    z-index: -1;
+    background: #d6d6d6; }
+  .tree-block.two-lines:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    width: 2px;
+    height: 26px;
+    z-index: -1;
+    background: #d6d6d6; }
+  .tree-block.two-lines:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -26px;
+    transform: translate(-50%, 0%);
+    width: calc(100% + 34px);
+    height: 2px;
+    z-index: -1;
+    background: #d6d6d6; }
+  .tree-block.three-lines:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: calc(100% + 52px);
+    z-index: -1;
+    background: #d6d6d6; }
+  .tree-block.three-lines:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -26px;
+    transform: translate(-50%, 0%);
+    width: calc(100% + 34px);
+    height: 2px;
+    z-index: -1;
+    background: #d6d6d6; }
+  .tree-block.last-lines:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -100%);
+    width: 2px;
+    height: 26px;
+    z-index: -1;
+    background: #d6d6d6; }
+
 .ui-block-title {
   padding: 23px 25px 18px;
   line-height: 1;
