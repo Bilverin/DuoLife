@@ -3917,6 +3917,10 @@ ol ol li {
     margin-bottom: 0; }
   .post .author-date a {
     font-weight: 700; }
+  .post .faq-title {
+    font-weight: 700;
+    padding-left: 0;
+    letter-spacing: 0.5px; }
 
 .post-block-photo {
   margin-bottom: 20px;
