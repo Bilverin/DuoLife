@@ -169,5 +169,11 @@
 	opacity: 1;
 	visibility: visible;
 	display: block;
+
+		.form-group {
+			.control-label {
+				font-size: 11px!important;
+			}
+		}
   }
 }

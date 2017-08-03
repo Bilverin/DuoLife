@@ -53,7 +53,7 @@
   position: relative;
 
   &.w-search {
-	width: 500px;
+	width: 450px;
 	min-height: 70px;
 	background-color: #494c62;
   }
@@ -174,9 +174,10 @@
 
   .author-subtitle {
 	display: block;
-	font-weight: 700;
+	font-weight: 400;
 	color: #9a9fbf;
-	font-size: 8px;
+	font-size: 9px;
+	text-transform: uppercase;
   }
 }
 
@@ -189,7 +190,7 @@
 }
 
 .control-icon {
-  margin-right: 29px;
+  margin-right: 23px;
   fill: $icon-color;
   margin-top: 8px;
 
@@ -831,6 +832,7 @@
   &.open {
 	min-height: 1000vh;
   }
+
 }
 
 .header-responsive {
@@ -1197,14 +1199,29 @@
   .header, .fixed-sidebar {
 	display: none;
   }
-
+  .header-responsive {
+  	padding-left: 90px;
+  	padding-right: 55px;
+  }
   .header-responsive,.fixed-sidebar.fixed-sidebar-responsive {
 	display: block;
   }
 
   .header-responsive {
-	.mobile-app-tabs .nav-link {
-	  padding: 0 10px;
+	.mobile-app-tabs {
+		.nav-item {
+			text-align: center;
+
+			.nav-link {
+			  display: inline-block;
+			  width: 45px;
+			  padding: 18px 10px 0 10px;
+			  &.with-glass-icon {
+			  	padding-top:25px;
+			  }
+			}
+		}
+		
 	}
   }
 
@@ -1234,6 +1251,18 @@
 
   .fixed-sidebar-left.sidebar--small {
 	height: 70px;
+	.js-sidebar-open {
+		position:absolute;
+		left:-45px; top:0;
+		width: 45px; height:70px;
+		padding-top: 21px; padding-left: 12px;
+		background:#38a9ff;
+
+		.olymp-menu-icon {
+			width: 20px;
+			fill: #fff;
+		}
+	}
   }
 
   .control-block {
