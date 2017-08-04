@@ -4,6 +4,12 @@
 
 .skills-item {
   margin-bottom: 20px;
+  position:relative;
+
+  .units {
+      position:absolute;
+      right: 0; top:-25px;
+    }
 
   .skills-item-meter {
 	padding: 0;
@@ -14,6 +20,12 @@
 	height: 6px;
   }
 
+}
+
+.w-pool {
+  .skills-item-meter {
+    margin-top: 20px;
+  }
 }
 
 .skills-item-info {

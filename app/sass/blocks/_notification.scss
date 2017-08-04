@@ -96,6 +96,11 @@
 	svg {
 	  width: 22px;
 	  height: 20px;
+	  &.olymp-star-icon {
+	  	&.completed {
+	  		fill:#ffe037;
+	  	}
+	  }
 	}
   }
 
@@ -375,6 +380,28 @@
 
 .birthday-item {
   padding: 25px;
+
+  .progress {
+  	display: table;
+  	width: 50%;
+  	margin-top: 30px;
+  	background:transparent;
+  	line-height: 25px;
+  	text-align: left;
+
+  	li {
+  		display: block;
+  		overflow: hidden;
+  	}
+
+  	.fl-l {
+  		float: left;
+  	}
+  	.fl-r {
+		float: right;
+		font-weight: 600;
+  	}	
+  }
 
   .author-thumb {
 	width: 40px;

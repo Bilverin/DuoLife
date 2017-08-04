@@ -1207,7 +1207,12 @@ fieldset[disabled] .checkbox, fieldset[disabled] .checkbox input[type=checkbox],
 
 /*------------- #SKILLS --------------*/
 .skills-item {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  position: relative; }
+  .skills-item .units {
+    position: absolute;
+    right: 0;
+    top: -25px; }
   .skills-item .skills-item-meter {
     padding: 0;
     width: 100%;
@@ -1215,6 +1220,9 @@ fieldset[disabled] .checkbox, fieldset[disabled] .checkbox input[type=checkbox],
     background-color: #ebecf2;
     position: relative;
     height: 6px; }
+
+.w-pool .skills-item-meter {
+  margin-top: 20px; }
 
 .skills-item-info {
   margin-bottom: 16px;
@@ -1925,6 +1933,8 @@ fieldset[disabled] .checkbox, fieldset[disabled] .checkbox input[type=checkbox],
     .notification-list .notification-icon svg {
       width: 22px;
       height: 20px; }
+      .notification-list .notification-icon svg.olymp-star-icon.completed {
+        fill: #ffe037; }
   .notification-list .more {
     position: absolute;
     right: 10px;
@@ -2104,6 +2114,21 @@ fieldset[disabled] .checkbox, fieldset[disabled] .checkbox input[type=checkbox],
 
 .birthday-item {
   padding: 25px; }
+  .birthday-item .progress {
+    display: table;
+    width: 50%;
+    margin-top: 30px;
+    background: transparent;
+    line-height: 25px;
+    text-align: left; }
+    .birthday-item .progress li {
+      display: block;
+      overflow: hidden; }
+    .birthday-item .progress .fl-l {
+      float: left; }
+    .birthday-item .progress .fl-r {
+      float: right;
+      font-weight: 600; }
   .birthday-item .author-thumb {
     width: 40px;
     height: 40px;
@@ -4173,7 +4198,7 @@ ol ol li {
   .comment-form .add-options-message {
     position: absolute;
     right: 20px;
-    bottom: 15px;
+    bottom: 20px;
     width: auto;
     padding: 0; }
   .comment-form .post__author {
